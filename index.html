@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ae387eaef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="product">
+            <div class="model" id="productImagesContainer">
+                <button class="scroll-btn scroll-btn-prev" onclick="scrollImages('prev')"><i class="fa-solid fa-angle-left" style="color: #000000;"></i></button>
+                <div class="product-images" id="productImages"></div>
+                <button class="scroll-btn scroll-btn-next" onclick="scrollImages('next')"><i class="fa-solid fa-angle-right" style="color: #000000;"></i></button>
+            </div>
+            <div class="detail">
+                <div class="detail-header">
+                    <h1 class="company">PERFORMAX</h1>
+                    <h1 class="specs">Regular Fit Active Training Printed Crew-Neck T-Shirt</h1>
+                    <h1 class="price">₹599</h1>
+                    <p class="discount">MRP <span>₹799</span> (25% OFF)</p>
+                    <p class="tax">Price inclusive of all taxes</p>
+                </div>
+                <div class="colour">
+                    <div class="fcolour">
+                        <img class="item active" id="grey" onclick="changeColor('grey')" src="./images/grey.jpg" alt="" >
+                        <p>Light Grey</p>
+                    </div>
+                    <div class="scolour">
+                        <img class="item" id="blue" onclick="changeColor('blue')" src="./images/black.jpg" alt="">
+                        <p>Navy Blue</p>
+                    </div>
+                </div>
+                <div class="size">
+                    <div class="select" id="size1" onclick="selectItem('size1')"><p>XS</p></div>
+                    <div class="select" id="size2" onclick="selectItem('size2')"><p>S</p></div>
+                    <div class="select" id="size3" onclick="selectItem('size3')"><p>M</p></div>
+                    <div class="select" id="size4" onclick="selectItem('size4')"><p>L</p></div>
+                    <div class="select" id="size5" onclick="selectItem('size5')"><p>XL</p></div>
+                </div>
+                <div class="des">
+                    <p>Inspired by everyday athletes everywhere, Performax's range of active wear will help you reach your fitness goals and how! Made for men, women and kids, the range is designed with new-age fabric technology like QuickDry and Kooltex. The anti-static and anti-microbial powers, clever contouring and durable fits will help you feel comfortable and supported during every workout.</p>
+                </div>
+                <div class="buy">
+                    <p>BUY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

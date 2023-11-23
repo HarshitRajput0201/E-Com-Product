@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    background-color: rgb(109, 109, 109);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+}
+
+.model{
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    background-color: #ffffff00;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.scroll-btn-prev {
+    left: 0;
+}
+
+.scroll-btn-next {
+    right: 0;
+}
+.model img{
+    width: 500px;
+    height: 600px;
+}
+
+.detail{
+    background-color: white;
+    width: 500px;
+    height: 550px;
+    padding: 1rem;
+}
+.company{
+    text-align: center;
+    padding: .5rem 0;
+    color: #b19975;
+}
+.specs{
+    font-size: 20px;
+    text-align: center;
+    padding: .25rem 0;
+}
+.price{
+    text-align: center;
+    padding: .5rem 0;
+}
+.discount{
+    text-align: center;
+    color: #b19975;
+    font-weight: 700;
+    padding: .25rem 0;
+}
+.discount span{
+    text-decoration: line-through;
+}
+.tax{
+    text-align: center;
+    padding: .25rem 0;
+    font-size: 13px;
+}
+
+.colour{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.fcolour{
+    text-align: center;
+    padding: 0 .25rem;
+    font-size: 13px;
+}
+.scolour{
+    text-align: center;
+    padding: 0 .25rem;
+    font-size: 13px;
+}
+.fcolour img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+.scolour img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.size{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    padding: 1rem 4rem;
+    gap: 3rem;
+
+}
+.select{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 30px;
+    border-radius: 1rem;
+    font-size: 13px;
+    font-weight: 700;
+}
+.selected{
+    background-color: #b19975;
+    color: white;
+    font-weight: 900;
+}
+.des p{
+    font-size: 15px;
+    text-align: justify;
+    padding: .25rem 1rem;
+}
+.buy{
+    background-color: #d5a249;
+    padding: 1rem;
+    margin: 2rem 4rem;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+
+}
+.buy p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+.active{
+    border: 2px solid #b19975;
+}
+
+.buy:hover{
+    scale: 1.1;
+    background-color: #ffb23e;
+    transition: .25s ease-in-out;
+}
+
+.select:hover{
+    background-color: #5f5f5f;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container{  
+        width: 100vw;
+        height: auto;
+        padding: 2rem;
+    }
+    
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+    }
+    
+    .model{
+        width: 350px;
+        height: 438px;
+        position: relative;
+        /* top: 30%; */
+    }
+    .model img{
+        width: 350px;
+        height: 438px;
+    }
+    .detail{
+        background-color: white;
+        width: 350px;
+        height: auto;
+        /* padding: 1rem; */
+    }   
+
+    .company{
+        font-size: 25px;
+    }
+    .specs{
+        font-size: 15px;
+    }
+    .price{
+        font-size: 20px;
+        padding: .25rem 0;
+    }
+    .discount{
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .tax{
+        text-align: center;
+        padding: .25rem 0;
+        font-size: 10px;
+    }
+
+    .colour{
+        padding: .5rem;
+    }
+    
+    .size{
+        padding: .5rem 3rem;
+        gap: 1.1rem;
+    }
+   
+    .des p{
+        height: 50px;
+        overflow: auto;
+    }
+    .buy{
+        padding: .5rem;
+        margin: 1rem 4rem;
+    
+    }
+    .buy p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    
+    .container{  
+        width: 100vw;
+        height: auto;
+        padding: 2rem;
+    }
+    
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+    }
+    
+    .model{
+        width: 350px;
+        height: 438px;
+        position: relative;
+        /* top: 30%; */
+    }
+    .model img{
+        width: 350px;
+        height: 438px;
+    }
+    .detail{
+        background-color: white;
+        width: 350px;
+        height: auto;
+        /* padding: 1rem; */
+    }   
+
+    .company{
+        font-size: 25px;
+    }
+    .specs{
+        font-size: 15px;
+    }
+    .price{
+        font-size: 20px;
+        padding: .25rem 0;
+    }
+    .discount{
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .tax{
+        text-align: center;
+        padding: .25rem 0;
+        font-size: 10px;
+    }
+
+    .colour{
+        padding: .5rem;
+    }
+    
+    .size{
+        padding: .5rem 3rem;
+        gap: 1.1rem;
+    }
+   
+    .des p{
+        height: 50px;
+        overflow: auto;
+    }
+    .buy{
+        padding: .5rem;
+        margin: 1rem 4rem;
+    
+    }
+    .buy p{
+        font-size: 20px;
+    }
+     
+}
+    
+   
